@@ -1,15 +1,15 @@
 image:
   file: .gitpod.Dockerfile
 
+#Initialize west workspace inside of the repository cloned by gitpod
 tasks:
   - name: West Init 
     init: |
-      mkdir -p .west
+      west init --local
       west update
       west completion bash > ~/west-completion.bash
       echo "source ~/west-completion.bash" >> ~/.bashrc
     #command: exit
-    # printf '[manifest] \npath = modules/lib/golioth \nfile = west.yml' >> /workspace/.west/config
 
 github:
   prebuilds:
