@@ -1,6 +1,6 @@
 image:
   file: .gitpod.Dockerfile
-# printf '[manifest] \npath = modules/lib/golioth \nfile = west.yml' >> /workspace/.west/config
+
 tasks:
   - name: West Init 
     init: |
@@ -9,6 +9,7 @@ tasks:
       west completion bash > ~/west-completion.bash
       echo "source ~/west-completion.bash" >> ~/.bashrc
     #command: exit
+    # printf '[manifest] \npath = modules/lib/golioth \nfile = west.yml' >> /workspace/.west/config
 
 github:
   prebuilds:
