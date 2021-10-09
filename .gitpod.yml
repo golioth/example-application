@@ -5,8 +5,8 @@ image:
 tasks:
   - name: West Init 
     init: |
-      echo 'export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr' >> ~/.bashrc
-      export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr'
+      echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
+      export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr
       west init --local
       west update
       west completion bash > ~/west-completion.bash
