@@ -8,8 +8,8 @@ tasks:
       export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
       echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
       west init --local
-      west update
-      west completion bash >> ~/.bashrc
+#      west update
+#      west completion bash >> ~/.bashrc
 
 github:
   prebuilds:
