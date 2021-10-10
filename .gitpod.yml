@@ -8,7 +8,7 @@ tasks:
       echo ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr >> ~/.bashrc
       west init --local
       west update
-      west completion >> ~/.bashrc
+      west completion bash >> ~/.bashrc
 
 github:
   prebuilds:
