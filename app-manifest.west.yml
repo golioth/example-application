@@ -5,5 +5,5 @@ manifest:
   projects:
     - name: zephyr
       revision: main
-      url: https://github.com/zephyrproject-rtos
+      url: https://github.com/zephyrproject-rtos/zephyr.git
       import: true
