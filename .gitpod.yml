@@ -5,8 +5,8 @@ image:
 tasks:
   - name: West Init
     init: |
-      echo ZEPHYR_BASE=${GITPOD_REPO_ROOT}/zephyr >> .env
       west init --local
+      echo ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr >> .env
       west update
       west completion bash >> ~/.bashrc
 
