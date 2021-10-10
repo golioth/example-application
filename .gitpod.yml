@@ -4,8 +4,9 @@ image:
 #Initialize west workspace inside of the repository cloned by gitpod
 tasks:
   - name: West Init
-    env: ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
-    init: west update
+    init: \
+      gp env ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
+      west update
 
 github:
   prebuilds:
