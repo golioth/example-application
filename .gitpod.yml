@@ -5,10 +5,10 @@ image:
 tasks:
   - name: West Init
     init: |
+      echo ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr >> ~/.bashrc
       west init --local
-      echo ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr >> .env
       west update
-      west completion bash >> ~/.bashrc
+      completion bash >> ~/.bashrc
 
 github:
   prebuilds:
