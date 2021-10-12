@@ -5,7 +5,8 @@ image:
 tasks:
   - name: West Init
     init: |
-      gp env ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
+      export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
+      echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
       west update
 
 github:
