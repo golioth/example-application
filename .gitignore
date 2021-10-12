@@ -8,3 +8,8 @@
 
 # build
 /build*
+
+# zephyr
+/zephyr*
+
+/modules*
