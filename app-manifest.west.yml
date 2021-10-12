@@ -4,6 +4,6 @@
 manifest:
   projects:
     - name: zephyr
-      revision: main
+      revision: v2.7-branch
       url: https://github.com/zephyrproject-rtos/zephyr.git
       import: true
