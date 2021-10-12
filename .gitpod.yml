@@ -9,6 +9,10 @@ tasks:
       echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
     #west update
 
+ports:
+  - port: 2000-8999
+    onOpen: ignore
+
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
