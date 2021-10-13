@@ -9,10 +9,6 @@ tasks:
       echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
     #west update
 
-#GDB Debugging Port
-ports:
-  - port: 2331 
-    onOpen: ignore
 
 github:
   prebuilds:
