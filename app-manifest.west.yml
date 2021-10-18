@@ -7,3 +7,9 @@ manifest:
       revision: v2.7-branch
       url: https://github.com/zephyrproject-rtos/zephyr.git
       import: true
+
+    - name: golioth
+      revision: main
+      url: https://github.com/golioth/zephyr-sdk.git
+      import: true
+
