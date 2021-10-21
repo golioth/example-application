@@ -8,6 +8,7 @@ tasks:
       export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
       echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
       west update golioth
+      west update
 
 
 github:
