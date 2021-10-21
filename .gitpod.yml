@@ -4,10 +4,7 @@ image:
 #Initialize west workspace inside of the repository cloned by gitpod
 tasks:
   - name: West Init
-    init: |
-      export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr 
-      echo "export ZEPHYR_BASE=$GITPOD_REPO_ROOT/zephyr" >> ~/.bashrc
-      west update golioth
+    init: | 
       west update
 
 
