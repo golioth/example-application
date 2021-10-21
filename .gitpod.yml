@@ -5,7 +5,8 @@ image:
 tasks:
   - name: West Init
     init: | 
-      west update
+      ls -la
+      #west update
 
 
 github:
