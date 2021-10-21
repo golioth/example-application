@@ -12,10 +12,9 @@ RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \
 
 RUN apt-get update && apt-get install -y libncurses5
 
-RUN mkdir /workspace/
 USER gitpod
 # Zephyr SDK
 ENV ZEPHYR_SDK_INSTALL_DIR=/opt/toolchains/zephyr-sdk-0.13.1
 ENV PATH="/opt/toolchains/gcc-arm-none-eabi-10-2020-q4-major/bin:${PATH}"
-RUN west init -m https://github.com/golioth/example-application.git /workspace/
+RUN sudo west init -m https://github.com/golioth/example-application.git /workspace/
 USER root
