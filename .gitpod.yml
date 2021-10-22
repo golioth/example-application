@@ -6,7 +6,7 @@ tasks:
   - name: West Init
     init: | 
       sudo cp -R /workaround/zephyr/ $GITPOD_REPO_ROOT/
-      west update
+      sudo west update
 
 
 github:
