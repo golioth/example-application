@@ -1,5 +1,4 @@
 # editors
-.vscode
 *.swp
 *~
 
@@ -8,3 +7,8 @@
 
 # build
 /build*
+
+# zephyr
+/zephyr*
+
+/modules*

@@ -1,0 +1,15 @@
+# Copyright (c) 2021 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  projects:
+    - name: zephyr
+      revision: v2.7-branch
+      url: https://github.com/zephyrproject-rtos/zephyr.git
+      import: true
+
+    - name: golioth
+      revision: main
+      url: https://github.com/golioth/zephyr-sdk.git
+      import: true
+

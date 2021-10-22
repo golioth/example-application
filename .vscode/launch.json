@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb-remote) Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "external",
+            "device":"nRF9160_xxAA",
+            "interface": "swd",
+            "cwd": "${workspaceRoot}",
+            "runToMain": true,
+            "executable": "${workspaceRoot}/build/zephyr/zephyr.elf",
+            "gdbTarget": "localhost:2331",
+        }
+    ]
+}

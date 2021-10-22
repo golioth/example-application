@@ -1,3 +1,8 @@
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+----
+
 # Zephyr Example Application
 
 This repository contains a Zephyr example application. The main purpose of this
@@ -10,25 +15,21 @@ applications. Some of the features demonstrated in this example are:
 - Out-of-tree [drivers][drivers]
 - Example CI configuration (using Github Actions)
 
-This repository is versioned together with the [Zephyr main tree][zephyr]. This
-means that every time that Zephyr is tagged, this repository is tagged as well
-with the same version number, and the [manifest](west.yml) entry for `zephyr`
-will point to the corresponding Zephyr tag. For example, `example-application`
-v2.6.0 will point to Zephyr v2.6.0. Note that the `main` branch will always
-point to the development branch of Zephyr, also `main`.
 
 [board_porting]: https://docs.zephyrproject.org/latest/guides/porting/board_porting.html
 [bindings]: https://docs.zephyrproject.org/latest/guides/dts/bindings.html
 [drivers]: https://docs.zephyrproject.org/latest/reference/drivers/index.html
 [zephyr]: https://github.com/zephyrproject-rtos/zephyr
 
-## Getting Started
+<br>
 
-Before getting started, make sure you have a proper Zephyr development
-environment. You can follow the official
-[Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/getting_started/index.html).
+# Getting Started
 
-### Initialization
+We reccomend using the provided gitpod workspace template to get started. (Click the button at the top of this readme) Unless of course you are the type of masochist who likes to build houses made from cards.
+
+<br>
+
+# Initialization
 
 The first step is to initialize the workspace folder (``my-workspace``) where
 the ``example-application`` and all Zephyr modules will be cloned. You can do
@@ -42,7 +43,9 @@ cd my-workspace
 west update
 ```
 
-### Build & Run
+<br>
+
+# Build & Run
 
 The application can be built by running:
 
