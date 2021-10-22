@@ -5,8 +5,8 @@ image:
 tasks:
   - name: West Init
     init: | 
-      ls -la
-      #west update
+      cp -R workaround/zephyr/ $GITPOD_REPO_ROOT/
+      west update
 
 
 github:
