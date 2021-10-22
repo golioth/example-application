@@ -5,7 +5,7 @@ image:
 tasks:
   - name: West Init
     init: | 
-      cp -R /workaround/zephyr/ $GITPOD_REPO_ROOT/
+      sudo cp -R /workaround/zephyr/ $GITPOD_REPO_ROOT/
       west update
 
 
